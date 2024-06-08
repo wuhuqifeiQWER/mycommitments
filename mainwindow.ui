@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>560</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menuLoad">
+     <property name="title">
+      <string>Load</string>
+     </property>
+     <addaction name="actionStudent"/>
+     <addaction name="actionTeacher"/>
+     <addaction name="actionScore"/>
+     <addaction name="actionCourse"/>
+    </widget>
+    <addaction name="actionReadAll"/>
+    <addaction name="menuLoad"/>
+   </widget>
+   <widget class="QMenu" name="menuFind">
+    <property name="title">
+     <string>Search</string>
+    </property>
+    <addaction name="actionSearchStudent"/>
+    <addaction name="actionSearchScore"/>
+    <addaction name="actionSearchClass"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionEditGrade"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionFilter"/>
+    <addaction name="actionSort"/>
+    <addaction name="actionStatistics"/>
+   </widget>
+   <widget class="QMenu" name="menuSysMgr">
+    <property name="title">
+     <string>SysMgr</string>
+    </property>
+    <widget class="QMenu" name="menuStudent">
+     <property name="title">
+      <string>Student</string>
+     </property>
+     <addaction name="actionSImport"/>
+     <addaction name="actionSDel"/>
+    </widget>
+    <widget class="QMenu" name="menuTeacher">
+     <property name="title">
+      <string>Teacher</string>
+     </property>
+     <addaction name="actionTImport"/>
+     <addaction name="actionTDel"/>
+    </widget>
+    <widget class="QMenu" name="menuCourse">
+     <property name="title">
+      <string>Course</string>
+     </property>
+     <addaction name="actionCImport"/>
+     <addaction name="actionCDel"/>
+    </widget>
+    <addaction name="menuStudent"/>
+    <addaction name="menuTeacher"/>
+    <addaction name="menuCourse"/>
+   </widget>
+   <widget class="QMenu" name="menuStudent_2">
+    <property name="title">
+     <string>Student</string>
+    </property>
+    <addaction name="actionInit"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menuFind"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuSysMgr"/>
+   <addaction name="menuStudent_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionReadAll">
+   <property name="text">
+    <string>ReadAll</string>
+   </property>
+  </action>
+  <action name="actionStudent">
+   <property name="text">
+    <string>Student</string>
+   </property>
+  </action>
+  <action name="actionTeacher">
+   <property name="text">
+    <string>Teacher</string>
+   </property>
+  </action>
+  <action name="actionScore">
+   <property name="text">
+    <string>Score</string>
+   </property>
+  </action>
+  <action name="actionCourse">
+   <property name="text">
+    <string>Course</string>
+   </property>
+  </action>
+  <action name="actionSearchStudent">
+   <property name="text">
+    <string>SearchStudent</string>
+   </property>
+  </action>
+  <action name="actionSearchScore">
+   <property name="text">
+    <string>SearchScore</string>
+   </property>
+  </action>
+  <action name="actionEditGrade">
+   <property name="text">
+    <string>EditGrade</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSearchClass">
+   <property name="text">
+    <string>SearchClass</string>
+   </property>
+  </action>
+  <action name="actionFilter">
+   <property name="text">
+    <string>Filter</string>
+   </property>
+  </action>
+  <action name="actionSort">
+   <property name="text">
+    <string>Sort</string>
+   </property>
+  </action>
+  <action name="actionStatistics">
+   <property name="text">
+    <string>Statistics</string>
+   </property>
+  </action>
+  <action name="actionSImport">
+   <property name="text">
+    <string>SImport</string>
+   </property>
+  </action>
+  <action name="actionSDel">
+   <property name="text">
+    <string>SDel</string>
+   </property>
+  </action>
+  <action name="actionTImport">
+   <property name="text">
+    <string>TImport</string>
+   </property>
+  </action>
+  <action name="actionTDel">
+   <property name="text">
+    <string>TDel</string>
+   </property>
+  </action>
+  <action name="actionCImport">
+   <property name="text">
+    <string>CImport</string>
+   </property>
+  </action>
+  <action name="actionCDel">
+   <property name="text">
+    <string>CDel</string>
+   </property>
+  </action>
+  <action name="actionInit">
+   <property name="text">
+    <string>Init</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
